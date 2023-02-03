@@ -1,0 +1,64 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+	<title>doors closed</title>
+	<style>
+		.s0 { fill: #0097a7 } 
+		.s1 { fill: #7e5d3f } 
+		.s2 { fill: #9b7b52 } 
+	</style>
+	<g id="doors closed">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" class="s0" d="m957.4 710.1h-222.5v-518.5h222.5z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s1" d="m957.4 710.1h-222.5v-518.5h222.5zm-211.1-10.5h199.8v-497.6h-199.8z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s2" d="m968 180.2v539.6h-241.9v-539.6zm-16.3 16.6h-211.1v508.1h211.1z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m951.7 455.2h-211.1v-10.4h211.1z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m951.7 594.3h-211.1v-10.5h211.1z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m951.7 327.8h-211.1v-10.4h211.1z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s1" d="m973.7 725h-253.3v-550h253.3zm-241.9-10.4h230.5v-529.2h-230.5z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m851.8 704.9h-11.3v-508.1h11.3z"/>
+				</g>
+			</g>
+			<g id="&lt;Group&gt;">
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" class="s0" d="m703.3 710.1h-222.5v-518.5h222.5z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s1" d="m703.3 710.1h-222.5v-518.5h222.5zm-211.1-10.5h199.8v-497.6h-199.8z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s2" d="m713.9 180.2v539.6h-241.9v-539.6zm-16.2 16.6h-211.2v508.1h211.2z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m697.7 455.2h-211.2v-10.4h211.2z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m697.7 594.3h-211.2v-10.5h211.2z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m697.7 327.8h-211.2v-10.4h211.2z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s1" d="m719.6 725h-253.3v-550h253.3zm-241.9-10.4h230.5v-529.2h-230.5z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m597.8 704.9h-11.4v-508.1h11.4z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
