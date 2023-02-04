@@ -4,6 +4,7 @@ import Cta from "./cta";
 import { BsChevronRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Video from "./video";
 
 export default function Main() {
   const [left, setLeft] = useState(false);
@@ -19,9 +20,16 @@ export default function Main() {
   return (
     <>
       <main className='flex flex-wrap justify-center items-center relative h-screen'>
+        <div className='w-full flex justify-center pt-24'>
+          <h1 className='uppercase text-white text-3xl font-medium pb-8'>
+            This is a campaign for a destination
+          </h1>
+        </div>
         <Cta zindex={zIndex} />
         <Doors left={left} right={right} />
-        <div className='beach flex items-center justify-center pt-24'>
+        <Video />
+
+        <div className='beach flex items-center justify-center'>
           <motion.img
             src='images/beach.svg'
             alt='beach illustration'
