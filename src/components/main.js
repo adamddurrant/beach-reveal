@@ -1,18 +1,53 @@
 import React from "react";
 import Doors from "./doors";
 import Cta from "./cta";
+import { BsChevronRight } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Main() {
+  const [left, setLeft] = useState(false);
+  const [right, setRight] = useState(false);
+  const [zIndex, setzIndex] = useState(false);
+
+  const handleClick = () => {
+    setTimeout(() => {
+      setzIndex(true);
+    }, 1000);
+  };
+
   return (
     <>
-      <main className='flex justify-center items-center relative'>
-        <Doors />
-        <motion.img
-          src='images/beach.svg'
-          alt='beach illustration'
-        ></motion.img>
-        <Cta />
+      <main className='flex flex-wrap justify-center items-center relative h-screen'>
+        <Cta zindex={zIndex} />
+        <Doors left={left} right={right} />
+        <div className='beach flex items-center justify-center pt-24'>
+          <motion.img
+            src='images/beach.svg'
+            alt='beach illustration'
+          ></motion.img>
+        </div>
+        <div className='callout w-full text-center flex justify-center'>
+          <div
+            className='callout-container w-[400px] cursor-pointer'
+            onClick={() => {
+              setLeft(true);
+              setRight(true);
+              handleClick();
+            }}
+          >
+            <div className='flex justify-center'>
+              <BsChevronRight
+                className='text-pink-400 rotate-180 font-medium'
+                size={30}
+              />
+              <BsChevronRight className='text-pink-400 font-medium' size={30} />
+            </div>
+            <h2 className='uppercase text-pink-400 text-3xl font-medium'>
+              slide the window to explore
+            </h2>
+          </div>
+        </div>
       </main>
     </>
   );
