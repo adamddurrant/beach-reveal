@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-iframe {
-  border-radius: 20px;
-}
-
 h1,
 h2 {
   -moz-text-fill-color: white;
@@ -18,7 +14,7 @@ h2 {
 
 .beach {
   clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-  transition: clip-path 3s;
+  transition: clip-path 3.5s;
 }
 
 .beach-open {

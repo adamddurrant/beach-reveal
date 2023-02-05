@@ -14,20 +14,26 @@ export default function Main() {
   const handleClick = () => {
     setTimeout(() => {
       setzIndex(true);
-    }, 1000);
+    }, 500);
   };
 
   return (
     <>
-      <main className='flex flex-wrap justify-center items-center relative h-[93vh]'>
+      <main className='flex flex-wrap justify-center items-center relative h-[100%]'>
         <div className='w-full flex justify-center pt-12'>
-          <h1 className='uppercase text-white text-4xl font-medium'>
+          <h1 className='uppercase text-white text-4xl font-medium pb-8'>
             This is a campaign for a destination
           </h1>
         </div>
         <div className='primary-content flex flex-wrap justify-center items-center relative'>
           <Cta zindex={zIndex} />
-          <Doors left={left} right={right} />
+          <Doors
+            left={left}
+            right={right}
+            setleft={setLeft}
+            setright={setRight}
+            setzindex={setzIndex}
+          />
           <Video />
           <div
             id='animation-wrap'
@@ -42,7 +48,7 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className='callout w-full text-center flex justify-center'>
+        <div className='callout w-full text-center flex justify-center pt-8 pb-24'>
           <div
             className='callout-container w-[400px] cursor-pointer'
             onClick={() => {

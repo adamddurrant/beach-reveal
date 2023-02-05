@@ -22,7 +22,7 @@ export default function Video() {
     <>
       {video && (
         <>
-          <div className='video-container rounded absolute z-20'>
+          <div className='video-container rounded absolute z-50'>
             <YouTube
               videoId='S-A1upowdJI'
               opts={opts}

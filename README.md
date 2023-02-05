@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# MMGY Global Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A landing page built with React, Tailwind and Framer Motion that features sliding windows that reveal an illustrated beach with a button to view a video.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These instructions will get you a copy of the project up and running on your local machine.
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You need to have Node.js and npm installed on your computer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installing
 
-### `npm test`
+1.  Clone this repository to your local machine
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`git clone https://github.com/adamddurrant/beach-reveal`
 
-### `npm run build`
+2.  Navigate to the project directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`cd beach-reveal`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.  Install the dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install`
 
-### `npm run eject`
+4.  Start the development server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Your default browser should now automatically open and display the landing page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Framer Motion](https://www.framer.com/motion/) - A production-ready motion library for React
+- [Tailwind CSS](https://tailwindcss.com/) - The utility-first CSS framework
 
-## Learn More
+## Reflection/Evaluation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Despite my lack of animation knowledge, I enjoyed this challenge and was surprised with what I could achieve.
+- The project took approximately 4-5 hours to complete.
+- I chose to use react to build quickly and to avoid as much vanilla CSS animation as possible (from memory, plain css animation can be time consuming).
+- I did not have access to the adobe software required to open illustrator files so instead I used [photopea.com](https://www.photopea.com/) to open and view each layer of the design
+- I exported each image layers I needed either as PNG or, where possible, an SVG - in both cases, images were cropped and cut out using photopea.
+- I spent a lot of time researching a method to animate the beach image to reveal in a curtain like way (from center outwards). Eventually, I found CSS `clip-path`. I used this property with a polygon shape and animated the `clip-path` to reveal the image behind the windows inline with the same speed as the windows opening.
+- To avoid lifting up state I used context API to manage the state of the video being played so that I could load the overlay and update the state variable from the button component.
+- I mostly took advantage of ternary expressions combined with `useState` to manage interactions.
+- I tripped over myself with `z-index` a few times as I misunderstood how `z-index` takes into account element `position` and DOM hierachy when two `z-index` values are the same.
+- I ran out of time trying to figure out how to change the doors from solid to opaque when opened - my thought process was to overlay a second set of opaque windows (exported from the design files) that animate identically to the solid windows. As the two sets of doors both animate, I could then transition the opacity of the solid doors out and the opacity of the opaque doors in.
