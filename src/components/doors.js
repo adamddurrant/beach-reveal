@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Doors({ left, right }) {
   return (
     <>
-      <motion.div className='doors absolute flex bottom-[1'>
+      <motion.div className='doors absolute flex'>
         <motion.div
           animate={{ x: left ? -480 : 0 }}
           initial={{ x: 0 }}

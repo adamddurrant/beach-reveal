@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { BsChevronRight } from "react-icons/bs";
 import { VideoContext } from "../contexts/VideoContext.js";
+import { motion } from "framer-motion";
 
 export default function Cta({ zindex }) {
   const { setVideo } = useContext(VideoContext);

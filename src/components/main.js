@@ -20,20 +20,22 @@ export default function Main() {
   return (
     <>
       <main className='flex flex-wrap justify-center items-center relative h-screen'>
-        <div className='w-full flex justify-center pt-24'>
-          <h1 className='uppercase text-white text-3xl font-medium pb-8'>
+        <div className='w-full flex justify-center pt-12'>
+          <h1 className='uppercase text-white text-3xl font-medium'>
             This is a campaign for a destination
           </h1>
         </div>
-        <Cta zindex={zIndex} />
-        <Doors left={left} right={right} />
-        <Video />
-
-        <div className='beach flex items-center justify-center'>
-          <motion.img
-            src='images/beach.svg'
-            alt='beach illustration'
-          ></motion.img>
+        <div className='primary-content flex flex-wrap justify-center items-center relative'>
+          <Cta zindex={zIndex} />
+          <Doors left={left} right={right} />
+          <Video />
+          <div className='beach flex items-center justify-center'>
+            <motion.img
+              className='contain'
+              src='images/beach.svg'
+              alt='beach illustration'
+            ></motion.img>
+          </div>
         </div>
         <div className='callout w-full text-center flex justify-center'>
           <div
@@ -51,7 +53,7 @@ export default function Main() {
               />
               <BsChevronRight className='text-pink-400 font-medium' size={30} />
             </div>
-            <h2 className='uppercase text-pink-400 text-3xl font-medium'>
+            <h2 className='uppercase text-white text-3xl font-medium'>
               slide the window to explore
             </h2>
           </div>
