@@ -29,12 +29,17 @@ export default function Main() {
           <Cta zindex={zIndex} />
           <Doors left={left} right={right} />
           <Video />
-          <div className='beach flex items-center justify-center'>
-            <motion.img
-              className='contain'
-              src='images/beach.svg'
-              alt='beach illustration'
-            ></motion.img>
+          <div
+            id='animation-wrap'
+            className={left ? "beach beach-open" : "beach"}
+          >
+            <div className='flex items-center justify-center'>
+              <motion.img
+                className='contain'
+                src='images/beach.svg'
+                alt='beach illustration'
+              ></motion.img>
+            </div>
           </div>
         </div>
         <div className='callout w-full text-center flex justify-center'>

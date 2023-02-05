@@ -15,3 +15,12 @@ h2 {
   -moz-text-stroke-width: 2px;
   -webkit-text-stroke-width: 2px;
 }
+
+.beach {
+  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  transition: clip-path 3s;
+}
+
+.beach-open {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
