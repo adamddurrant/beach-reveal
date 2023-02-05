@@ -8,6 +8,10 @@ iframe {
 
 h1,
 h2 {
-  text-shadow: -2px -2px 0 #f472b6, 2px -2px 0 #f472b6, -2px 2px 0 #f472b6,
-    2px 2px 0 #f472b6;
+  -moz-text-fill-color: white;
+  -webkit-text-fill-color: white;
+  -moz-text-stroke-color: #f472b6;
+  -webkit-text-stroke-color: #f472b6;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
 }

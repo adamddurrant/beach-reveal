@@ -1,7 +1,7 @@
 import React from "react";
 import Doors from "./doors";
 import Cta from "./cta";
-import { BsChevronRight } from "react-icons/bs";
+import { FaChevronRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Video from "./video";
@@ -19,9 +19,9 @@ export default function Main() {
 
   return (
     <>
-      <main className='flex flex-wrap justify-center items-center relative h-screen'>
+      <main className='flex flex-wrap justify-center items-center relative h-[93vh]'>
         <div className='w-full flex justify-center pt-12'>
-          <h1 className='uppercase text-white text-3xl font-medium'>
+          <h1 className='uppercase text-white text-4xl font-medium'>
             This is a campaign for a destination
           </h1>
         </div>
@@ -46,14 +46,14 @@ export default function Main() {
               handleClick();
             }}
           >
-            <div className='flex justify-center'>
-              <BsChevronRight
+            <div className='flex justify-center pb-2'>
+              <FaChevronRight
                 className='text-pink-400 rotate-180 font-medium'
                 size={30}
               />
-              <BsChevronRight className='text-pink-400 font-medium' size={30} />
+              <FaChevronRight className='text-pink-400 font-medium' size={30} />
             </div>
-            <h2 className='uppercase text-white text-3xl font-medium'>
+            <h2 className='uppercase text-white text-4xl font-medium'>
               slide the window to explore
             </h2>
           </div>
