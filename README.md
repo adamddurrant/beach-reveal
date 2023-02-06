@@ -2,9 +2,9 @@
 
 A landing page built with React, Tailwind and Framer Motion that features sliding windows that reveal an illustrated beach with a button to view a video.
 
-## GIF
+## Screenshot
 
-![Gif](public/images/gif.gif)
+![screenshot](public/images/screenshot.png)
 
 ## Getting Started
 
@@ -18,26 +18,25 @@ You need to have Node.js and npm installed on your computer.
 
 1.  Clone this repository to your local machine
 
-```bash
+```
 git clone https://github.com/adamddurrant/beach-reveal
-
 ```
 
 2.  Navigate to the project directory
 
-```bash
+```
 cd beach-reveal
 ```
 
 3.  Install the dependencies
 
-```bash
+```
 npm install
 ```
 
 4.  Start the development server
 
-```bash
+```
 npm start
 ```
 
