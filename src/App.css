@@ -20,3 +20,26 @@ h2 {
 .beach-open {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+.video-container {
+  --aspect-ratio: 3 / 4;
+}
+
+@media screen and (min-width: 900px) and (max-device-width: 1280px) {
+  .door1 img {
+    height: 400px;
+  }
+
+  .door2 img {
+    height: 400px;
+  }
+}
+@media screen and (max-device-width: 900px) {
+  .door1 img {
+    height: 300px;
+  }
+
+  .door2 img {
+    height: 300px;
+  }
+}
