@@ -2,6 +2,10 @@
 
 A landing page built with React, Tailwind and Framer Motion that features sliding windows that reveal an illustrated beach with a button to view a video.
 
+## GIF
+
+![Gif](public/images/gif.gif)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine.

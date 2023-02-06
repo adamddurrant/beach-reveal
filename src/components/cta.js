@@ -3,7 +3,7 @@ import { BsChevronRight } from "react-icons/bs";
 import { VideoContext } from "../contexts/VideoContext.js";
 import { motion } from "framer-motion";
 
-export default function Cta({ zindex }) {
+export default function Cta({ zindex, setzindex }) {
   const { setVideo } = useContext(VideoContext);
   return (
     <>
@@ -22,6 +22,7 @@ export default function Cta({ zindex }) {
         style={{ zIndex: zindex ? 41 : 0 }}
         onClick={() => {
           setVideo(true);
+          setzindex(false);
         }}
       >
         WATCH VIDEO <BsChevronRight />

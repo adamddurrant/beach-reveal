@@ -23,7 +23,7 @@ export default function Main() {
       <main className='flex flex-wrap justify-center items-center relative h-[100%]'>
         <Title />
         <div className='primary-content flex flex-wrap justify-center items-center relative'>
-          <Cta zindex={zIndex} />
+          <Cta zindex={zIndex} setzindex={setzIndex} />
           <Doors
             left={left}
             right={right}
