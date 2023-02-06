@@ -47,4 +47,5 @@ Your default browser should now automatically open and display the landing page.
 - To avoid lifting up state I used context API to manage the state of the video being played so that I could load the overlay and update the state variable from the button component.
 - I mostly took advantage of ternary expressions combined with `useState` to manage interactions.
 - I tripped over myself with `z-index` a few times as I misunderstood how `z-index` takes into account element `position` and DOM hierachy when two `z-index` values are the same.
+- My approach was to make each element work and follow up with a refactor to separate components and simplify the code.
 - I ran out of time trying to figure out how to change the doors from solid to opaque when opened - my thought process was to overlay a second set of opaque windows (exported from the design files) that animate identically to the solid windows. As the two sets of doors both animate, I could then transition the opacity of the solid doors out and the opacity of the opaque doors in.
